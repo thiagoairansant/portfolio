@@ -99,36 +99,84 @@ body {
 }
 
   /* PYTHON */
-  .py-list { display: flex; flex-direction: column; gap: 10px; }
-  .py-item {
-    padding: 14px 16px;
-    background: #fff;
-    border: 1px solid #e8e8e8;
-    border-radius: 8px;
-  }
-  .py-item strong { font-size: 0.88rem; font-weight: 600; }
-  .py-item p { font-size: 0.83rem; color: #666; margin-top: 3px; }
-  .py-tag {
-    font-size: 0.7rem;
-    padding: 2px 8px;
-    background: #f3f4f6;
-    color: #555;
-    border-radius: 4px;
-    float: right;
-    margin-top: 2px;
-  }
+ .py-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.py-item {
+  padding: 16px;
+  background: #fff;
+
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+
+  transition: 0.3s;
+}
+
+.py-item:hover {
+  transform: translateY(-3px);
+}
+
+.py-item strong {
+  display: block;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  margin-bottom: 6px;
+}
+
+.py-item p {
+  font-size: 0.88rem;
+  color: #666;
+
+  line-height: 1.5;
+}
+
+.py-tag {
+  display: inline-block;
+
+  font-size: 0.7rem;
+  font-weight: 500;
+
+  padding: 4px 8px;
+
+  background: #f3f4f6;
+  color: #555;
+
+  border-radius: 6px;
+
+  margin-bottom: 10px;
+}
 
   /* ROADMAP */
-  .road-list { display: flex; flex-direction: column; gap: 20px; }
+.road-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
- .road-item {
+.road-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+
+  padding: 14px 16px;
+
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+
+  transition: 0.3s;
+}
+
+.road-item:hover {
+  transform: translateY(-3px);
 }
 
 .road-content {
-  margin-left: 0%;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -136,22 +184,28 @@ body {
 
 .status {
   padding: 6px 12px;
+
   border-radius: 999px;
+
   font-size: 0.75rem;
   font-weight: 600;
 }
+
 .status.andamento {
   background: #1d1d1d;
   color: #ff9100;
 }
+
 .status.concluido {
   background: #1d1d1d;
-  color: #382f2f;
+  color: #00c853;
 }
+
 .status.planejado {
   background: #1d1d1d;
-  color: #ff0000;
+  color: #ff4d4d;
 }
+
   /* CONTATO */
   .contact-links { display: flex; gap: 12px; flex-wrap: wrap; }
   .contact-links a {
