@@ -1,0 +1,135 @@
+  /* RESET */
+  
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f7f6f6;
+    color: #050505;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+    line-height: 1.7;
+  }
+
+  /* HEADER */
+  header { margin-bottom: 56px; }
+  header h1 { font-size: 1.6rem; font-weight: 600; margin-bottom: 4px; }
+  header p { color: #666; font-size: 0.95rem; }
+  .badge {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    background: #eef2ff;
+    color: #170ce9;
+    border-radius: 20px;
+  }
+
+
+  /* SEÇÕES */
+  section { margin-bottom: 48px; }
+  h2 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #424344;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  /* SOBRE */
+  .sobre p { font-size: 0.95rem; color: #444; }
+
+  /* SKILLS */
+  .skills-list { display: flex; flex-direction: column; gap: 12px; }
+  .skill-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 16px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+  }
+  .skill-icon { font-size: 1.1rem; margin-top: 2px; }
+  .skill-item strong { font-size: 0.9rem; font-weight: 600; display: block; margin-bottom: 2px; }
+  .skill-item span { font-size: 0.85rem; color: #666; }
+
+  /* PYTHON */
+  .py-list { display: flex; flex-direction: column; gap: 10px; }
+  .py-item {
+    padding: 14px 16px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+  }
+  .py-item strong { font-size: 0.88rem; font-weight: 600; }
+  .py-item p { font-size: 0.83rem; color: #666; margin-top: 3px; }
+  .py-tag {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    background: #f3f4f6;
+    color: #555;
+    border-radius: 4px;
+    float: right;
+    margin-top: 2px;
+  }
+
+  /* ROADMAP */
+  .road-list { display: flex; flex-direction: column; gap: 20px; }
+
+ .road-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.road-content {
+  margin-left: 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.status.andamento {
+  background: #1d1d1d;
+  color: #ff9100;
+}
+.status.concluido {
+  background: #1d1d1d;
+  color: #382f2f;
+}
+.status.planejado {
+  background: #1d1d1d;
+  color: #ff0000;
+}
+  /* CONTATO */
+  .contact-links { display: flex; gap: 12px; flex-wrap: wrap; }
+  .contact-links a {
+    font-size: 0.85rem;
+    color: #4f46e5;
+    text-decoration: none;
+    padding: 6px 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    transition: border-color 0.15s;
+  }
+  .contact-links a:hover { border-color: #3730bd; }
+
+  /* FOOTER */
+  footer {
+    margin-top: 60px;
+    font-size: 0.90rem;
+    color: #bbb;
+    text-align: center;
+  }
