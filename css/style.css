@@ -7,14 +7,23 @@
     background: #f7f6f6;
     color: #050505;
     max-width: 680px;
+    width: 100%;
     margin: 0 auto;
-    padding: 60px 24px 80px;
+    padding: 30px 16px;
     line-height: 1.7;
+
+    img {
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
   }
 
   /* HEADER */
-  header { margin-bottom: 56px; }
-  header h1 { font-size: 1.6rem; font-weight: 600; margin-bottom: 4px; }
+  header { margin-bottom: 40px; }
+  header h1 { font-size: 2rem; font-weight: 600; margin-bottom: 4px; }
   header p { color: #666; font-size: 0.95rem; }
   .badge {
     display: inline-block;
@@ -30,7 +39,7 @@
   /* SEÇÕES */
   section { margin-bottom: 48px; }
   h2 {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.12em;
@@ -43,20 +52,51 @@
   /* SOBRE */
   .sobre p { font-size: 0.95rem; color: #444; }
 
-  /* SKILLS */
-  .skills-list { display: flex; flex-direction: column; gap: 12px; }
-  .skill-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    padding: 14px 16px;
-    background: #fff;
-    border: 1px solid #e8e8e8;
-    border-radius: 8px;
-  }
-  .skill-icon { font-size: 1.1rem; margin-top: 2px; }
-  .skill-item strong { font-size: 0.9rem; font-weight: 600; display: block; margin-bottom: 2px; }
-  .skill-item span { font-size: 0.85rem; color: #666; }
+/* SKILLS */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  padding: 16px;
+  background: #fff;
+
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+
+  transition: 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+}
+
+.skill-icon {
+  font-size: 1.1rem;
+  margin-top: 2px;
+}
+
+.skill-item strong {
+  display: block;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  margin-bottom: 4px;
+}
+
+.skill-item span {
+  font-size: 0.88rem;
+  color: #666;
+
+  line-height: 1.5;
+}
 
   /* PYTHON */
   .py-list { display: flex; flex-direction: column; gap: 10px; }
